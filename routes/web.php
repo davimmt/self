@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Auth::routes();
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +16,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 |
 */
 
-Route::view('/', 'welcome');
-Route::view('quotes', 'quotes.quotes');
+Route::view('/{path?}', 'index')->where('path', '.*');

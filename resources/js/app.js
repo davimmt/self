@@ -12,11 +12,5 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/Logo');
-require('./components/Quote');
-require('./components/Text');
-require('./components/Book');
-require('./components/Author');
-
-require('./quote/components/QuoteSearch');
+require('./components/Index');
 
